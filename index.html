@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<title>Clibaires - Servicios de Aire Acondicionado</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link href="data:image/x-icon;base64," rel="icon" type="image:x-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    // Configuración de Tailwind CSS (colores, fuentes, etc.)
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1193d4", // Color principal azul
+            "background-light": "#f6f7f8",
+            "background-dark": "#101c22",
+          },
+          fontFamily: {
+            "display": ["Public Sans"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          }
+        }
+      }
+    }
+</script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+
+<header class="sticky top-0 z-50 w-full bg-primary/90 backdrop-blur-sm shadow-lg">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex h-24 items-center justify-between">
+    <a class="flex items-center gap-3" href="index.html">
+        <img class="h-20 w-auto" src="logo321[1].png" alt="Logo de Clibaires"/> 
+    </a>
+    
+    <nav class="hidden md:flex items-center gap-8">
+        <a class="text-base font-medium text-white hover:text-white/80 transition-colors" href="equipos_comerciales.html">Equipos Comerciales</a>
+        <a class="text-base font-medium text-white hover:text-white/80 transition-colors" href="equipos_industriales.html">Equipos Industriales</a>
+        <a class="text-base font-medium text-white hover:text-white/80 transition-colors" href="chillers.html">Chillers</a> 
+        <a class="text-base font-medium text-white hover:text-white/80 transition-colors" href="residenciales.html">Residenciales</a>
+        <a class="text-base font-medium text-white hover:text-white/80 transition-colors" href="nosotros.html">Nosotros</a>
+    </nav>
+    
+    <a class="hidden md:inline-flex items-center justify-center rounded-lg bg-white px-5 py-3 text-base font-bold text-primary shadow-md transition-transform hover:scale-105" href="#contacto-section">Obtener Cotización</a>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<section class="relative h-[60vh] min-h-[480px] bg-cover bg-center" style='background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCIjbcXtFj-pEortEMggqJQ1uBs4e0o12VOHe6OAXFLkoKpewCljlZks0UMEt94QIt1MYb5d9o8Hn2bISm9YvePix5PC16TTB5LyEAfqstvF_pSECGcsUZbV9O1D-9qm5waWumZORHyEvSAaPOTjXsIKWOOhNTQhscem2y3ati5ImEyKPEVKa_jjdroLLuPKHC4XLvw0FYwwsWlV8xCwDBd2bc0nJn4lLb_7CVZT129Qx_hivwTRsNp9U_2oPKdXTQ7DZgNCMtt5TA");'>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
+<div class="max-w-4xl px-4 sm:px-6 lg:px-8">
+<h1 class="text-4xl font-black leading-tight tracking-tight sm:text-5xl md:text-6xl">Nuestros Servicios de Aire Acondicionado</h1>
+<p class="mt-6 max-w-2xl mx-auto text-lg leading-relaxed sm:text-xl">Soluciones completas para mantenerte fresco. Desde la instalación y el mantenimiento hasta reparaciones de emergencia, estamos para servirte.</p>
+<a class="mt-8 inline-flex items-center justify-center rounded-lg bg-primary px-8 py-4 text-lg font-bold text-white shadow-lg transition-transform hover:scale-105" href="#contacto-section">Solicitar un Servicio</a>
+</div>
+</div>
+</section>
+<section class="py-16 sm:py-24 bg-background-light dark:bg-background-dark">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center">
+<h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">Servicios Integrales</h2>
+<p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-400">Ofrecemos una amplia gama de servicios para asegurar tu confort durante todo el año.</p>
+</div>
+<div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <div class="rounded-xl bg-white dark:bg-background-dark/50 p-8 shadow-lg transition-transform hover:-translate-y-1">
+<div class="flex items-center justify-center h-16 w-16 rounded-full bg-primary text-white">
+<span class="material-symbols-outlined text-4xl">air</span>
+</div>
+<h3 class="mt-6 text-xl font-bold text-gray-900 dark:text-white">Instalación Residencial y Comercial</h3>
+<p class="mt-2 text-base text-gray-600 dark:text-gray-400">Instalación experta de sistemas de aire acondicionado de alta eficiencia para hogares y negocios. Nos adaptamos a tus necesidades y presupuesto.</p>
+</div>
+<div class="rounded-xl bg-white dark:bg-background-dark/50 p-8 shadow-lg transition-transform hover:-translate-y-1">
+<div class="flex items-center justify-center h-16 w-16 rounded-full bg-primary text-white">
+<span class="material-symbols-outlined text-4xl">build_circle</span>
+</div>
+<h3 class="mt-6 text-xl font-bold text-gray-900 dark:text-white">Mantenimiento Preventivo</h3>
+<p class="mt-2 text-base text-gray-600 dark:text-gray-400">Planes de mantenimiento regular para asegurar un rendimiento óptimo, prevenir futuras averías y alargar la vida útil de tu equipo.</p>
+</div>
+<div class="rounded-xl bg-white dark:bg-background-dark/50 p-8 shadow-lg transition-transform hover:-translate-y-1">
+<div class="flex items-center justify-center h-16 w-16 rounded-full bg-primary text-white">
+<span class="material-symbols-outlined text-4xl">healing</span>
+</div>
+<h3 class="mt-6 text-xl font-bold text-gray-900 dark:text-white">Reparaciones de Emergencia</h3>
+<p class="mt-2 text-base text-gray-600 dark:text-gray-400">Servicio de reparación rápido y eficaz disponible 24/7. Nuestros técnicos certificados restaurarán tu confort en poco tiempo.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-gray-100 dark:bg-black/30 py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+            
+            <div>
+                <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">Equipos R-32 100% Sustentables</h2>
+                
+                <p class="mt-4 text-xl text-gray-700 dark:text-gray-300">
+                    El refrigerante que llegó para reemplazar al R22, con mayores ventajas para usuarios y medio ambiente.
+                </p>
+                
+                <p class="mt-4 text-lg text-gray-700 dark:text-gray-300">
+                    El R-32 es un moderno refrigerante ecológico que cumple con los más altos estándares ambientales. Se trata de una sustancia que no daña la capa de ozono; su condición de un solo componente facilita su recuperación, reciclaje y reutilización, y, tiene un potencial de calentamiento global (GWP) de solo un tercio en comparación con el R-410A, el refrigerante más utilizado hoy en día.
+                </p>
+                
+                <h3 class="mt-6 text-xl font-bold text-gray-900 dark:text-white">El R-32 ofrece numerosas ventajas medioambientales:</h3>
+                <ul class="mt-3 space-y-2 text-lg text-gray-700 dark:text-gray-300 list-disc list-inside">
+                    <li>No contiene cloro ni bromo, por lo que no degrada la capa de ozono.</li>
+                    <li>Al ser una sustancia de un solo componente, es más eficiente de recuperar, procesar y reutilizar al final de su ciclo de vida útil.</li>
+                    <li>Su GWP es de 675 mientras que el del R-410A es superior a 2000, por lo que causa aproximadamente un tercio de efecto invernadero.</li>
+                    <li>Proporciona un rendimiento energético similar al R-410A con menores impactos ambientales.</li>
+                </ul>
+            </div>
+
+            <div class="mt-8 md:mt-0 grid grid-cols-2 gap-4 items-start">
+                
+                <div class="grid gap-4">
+                    <div>
+                        <img alt="Instalación de aire acondicionado en una casa moderna" class="h-auto max-w-full rounded-lg shadow-md transition-transform hover:scale-105" src="https://i.pinimg.com/1200x/53/3c/f0/533cf048023b15e74e3094ee17eeb502.jpg"/>
+                    </div>
+                </div>
+                
+                <div class="grid gap-4">
+                    <div>
+                        <img alt="Técnico realizando mantenimiento a una unidad de AC" class="h-auto max-w-full rounded-lg shadow-md transition-transform hover:scale-105" src="https://www.ingeref.com.ar/wp-content/uploads/2023/05/descarga-16.png"/>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<section class="py-16 sm:py-24 bg-white dark:bg-black/20">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center">
+<h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">Galería de Nuestros Proyectos</h2>
+<p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-400">Echa un vistazo al trabajo de calidad que hemos entregado a nuestros clientes. Instalaciones, mantenimientos y reparaciones de alta calidad.</p>
+</div>
+<div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div class="grid gap-4">
+<div><img alt="Instalación de aire acondicionado en una casa moderna" class="h-auto max-w-full rounded-lg shadow-md transition-transform hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCytemNrre8PkhsWdEnAA4zZh23BqOmmMpv4cey5FT93L8g-vEMS5pPe3YhSKcL8MqMdAtrIIrYrCSjPzVIHgfykcVx_YvwuxO7rseeMqRqSSdThqAOeij9T0T2m9j-UGv1KMS8RH9VYIudGj2PfooIWnHvhtnwHLeHZXCN42Vf6IoaczyVRMvn3T4MoMZDsnZhYrNPFYU9aNDwVK1Z1pZbGdnE6N400pJjrRlZl-a5zf12eKebIqI-mwZPyeu2g8VAePOMW2_vfUo"/></div>
+<div><img alt="Técnico realizando mantenimiento a una unidad de AC" class="h-auto max-w-full rounded-lg shadow-md transition-transform hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCV-ON-BfXUO8ekulf6dRKGw8m_mBsS1FZQ-XGQ2DXmNJmtepHXX5RlP373EnBRANJxX64YlJrreCTbTvkh5fATlnFHG3HIdUUYN3EcQDRBp331WI__vGaAChOsQRUR7bwDgnD3I4KWdizaM2GjbudKyvkl7536n-fTs5Ls96k6Kp_TqxzZfkVEtpsrmRujPlEKy4FS4elC3LkgzjdSzsAlExf_L2Zcqn5KZcwZsw_elGahRnUh8mjKxdsBWUmmsh4aFmr2g75Jhfo"/></div>
+</div>
+<div class="grid gap-4">
+<div><img alt="Instalación de unidad de AC comercial en un tejado" class="h-auto max-w-full rounded-lg shadow-md transition-transform hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbOUc8y2vdGlms-m1mjHilNMlVGRIAlggLOBinwA8N7WlrUnJLmnidd5BZz8oqw0DZUj0BNpstfbeWF31atoq9YKnhK9Bm5s6kyWmyQmafoEgRtTls1MzHMlrXK3CIK_9P7ABd2gOLpCMDMP4Y-NN-1TJAivOwQ0CuOFCatOZEtixinNECOj0h_VPIbC60ENSIbn-vpwq3pIOPr19LdbDPMlswBrBeueCHO-LlxUDda5z9nCMsW18u6wscPgBfiSr49BlTNY5oK44"/></div>
+<div><img alt="Reparando un sistema de aire acondicionado residencial" class="h-auto max-w-full rounded-lg shadow-md transition-transform hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAr71vOaWCTqk9mykfS0liRGsDe9TOtzo8-e0iFuoA4JhilVV3adb8pVi-gcD-5sCVsgsTJ5ai7iA03ucKTuUyYn7jD-CF6OQkCArwbLElWCYW-xO_GJ-LtE-BkhPhKz6klImZFMAHYMyu73zCqfS1wHz7c211hk2NVSuurWGIeZSV8aCGX6zUuNCpJhl7DcycosuK5bD8M34kytf0t0aG_5HM9blu1mztAYTKxMret5iBZkHhIsscj3WxVTeZZMPMhrV0ItEW5qmQ"/></div>
+</div>
+<div class="grid gap-4">
+<div><img alt="Instalación limpia y ordenada de un mini-split sin ductos" class="h-auto max-w-full rounded-lg shadow-md transition-transform hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzwkalxDSpKVScTKyg7WFFb0RYgeM3-9sONKaOBG1qhNM3DO-iNNyOKn9qZxQNA2iuoWsq9DGE0D-HaACim6o6VDZ2FxpUBMrupIhlMT12NGll-3lqV3R13eMIq10mYascaJxHjSt3eq6qHvxIOVtsDTz9fwkLMCb--wkkD6R-tl8ff6NmvfZeuYIJAtQdioqyFgsYy30B65Y1NvB2QQ2GL43NfwDms4RpzaYiZZyhQTYrwvnba8Fc-Ew9Zr2H75UpISmFIfXzVdg"/></div>
+<div><img alt="Equipo de técnicos trabajando en un proyecto a gran escala" class="h-auto max-w-full rounded-lg shadow-md transition-transform hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJr77arLiEFBkPNbUFISBJFNu6_PIpZ63LYi7dA0ULFSf9uRXl7j9t_zwm37DomkI621vk9sUVSTCJnDN6xwwIRER9ZX35q24vGm854twmylJ6iURED22O__MKo81LQ8e0dNxqyu0NwBoDunKF-TP9bFYO65L_w_YhF4zG9FRykwlKIuadClk209nr0KC-1XNV0YIJvN4Jeg5qHVPjonaLA4ujLdFeYQe6qwWnCvCtZ6mr3vRH1cOCHBWUDIzXfW0TKv7IaTo-Qd4"/></div>
+</div>
+<div class="grid gap-4">
+<div><img alt="Vista detallada de la instalación de una nueva unidad de AC" class="h-auto max-w-full rounded-lg shadow-md transition-transform hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2eiEFSlIta6OX-czY__vJgquvk-K-4MOIyfHVvnzBzZdULw5-tFWczdqvkwsQDdlkDjjjCFtyR0vRE8QmsrAv0RNvf80JQ-Sc8WFuXEdajigqGMUQb16-M8VzkObjWnCsH0Ro27X-DchDrIHMZKn0lkYT0mpBDxdvSpztKEoZB5nI_DzqLWj5YP-uYmHU9H-isp4r_FSZhoyRmV9qOflrWflXMJdDb2NQkRTnaBnws9CBxM7fXFmz6qjA6C23FzQbRkxFBKjm_Ys"/></div>
+<div><img alt="Cliente feliz con su aire acondicionado recién instalado" class="h-auto max-w-full rounded-lg shadow-md transition-transform hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9lEPv4QtiGbuCb3ByNpJHLsUsfTtyIEXYgzhLJFHUhpeOJFFuLPUELu6SwumDHrqmBfAeSIz_wjQqyiiXcjYBZ9Hy3IG1SgTzt9IWI07LNbjef003plrWnSLh-Lf4G_DI7ouLOC71sA5SHsGF3PBDX6b4LvwEjg-tNW_oenWslxGlnAdA3IeZqj_Gts_M1fkP75L6GG7quQVeC5UwD5Vj0-A1okw7FP9htyRZ8lJlNYYogvCmp4TUV3ZVQMVMwx3Nj_8nlEbzCaM"/></div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-white dark:bg-black/20 py-32 text-center">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl">Nuestros Avales</h2>
+        
+      
+
+        <div class="grid grid-cols-1 gap-y-16 sm:grid-cols-2 md:grid-cols-3 items-center justify-items-center md:gap-x-12 lg:gap-x-20">
+            
+            <div class="flex items-center justify-center h-[120px] p-2">
+                <img class="max-w-full max-h-[100px] w-auto h-auto object-contain" src="Imagen de WhatsApp 2025-10-12 a las 12.53.26_3a7df9b1.jpg" alt="Logo IACT - Instituto Argentino de Capacitación Técnica"/>
+            </div>
+            
+            <div class="flex items-center justify-center h-[120px] p-2">
+                <img class="max-w-full max-h-[100px] w-auto h-auto object-contain" src="Imagen de WhatsApp 2025-10-12 a las 11.20.34_eba1ec22.jpg" alt="Logo Cámara Argentina de Calefacción, Aire Acondicionado y Ventilación"/>
+            </div>
+            
+            <div class="flex items-center justify-center h-[120px] p-2">
+                <img class="max-w-full max-h-[100px] w-auto h-auto object-contain" src="Imagen de WhatsApp 2025-10-12 a las 11.20.34_83df42c5.jpg" alt="Logo UTN.BA - Universidad Tecnológica Nacional"/>
+            </div>
+            
+        </div>
+        
+    </div>
+</section>
+<section class="py-16 sm:py-24 bg-white dark:bg-black/20">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center">
+<h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">Lo que Dicen Nuestros Clientes</h2>
+<p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-400">La satisfacción de nuestros clientes es nuestra mejor carta de presentación.</p>
+</div>
+<div class="mt-12 grid gap-8 lg:grid-cols-3">
+    <div class="rounded-xl bg-white dark:bg-background-dark/50 p-8 shadow-lg">
+<div class="flex items-center mb-4">
+<img alt="Avatar de un cliente" class="w-12 h-12 rounded-full mr-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIq5AnbzPu2HYeCTMq80mvXU-6Po-iOe8hu7xBQ8oK7TiVKOs9Q39rapQOTn9yWY5W1tDEnqhV364JCJi4VP3M8vNf7uOANPC-iq0VkXtomoYP3OL9vjmzWBIJv9BQAcM2vpil-ANsn2bz-ff6Ayfc6R1HU4uwysTPhlLsgSsv6Hco0ci536uznev4kHJuqo47avHc1juIiSMYHGb3Wu3BkfuN7uVZl7MXJHKQlC04kkXqwLPgsb1q-SVcbPB6A6nTOHzgBGC2cRY"/>
+<div>
+<p class="font-bold text-gray-900 dark:text-white">Maria Rodriguez</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Propietaria de Vivienda</p>
+</div>
+</div>
+<p class="text-gray-600 dark:text-gray-300">"La instalación fue rápida, limpia y profesional. El equipo fue muy amable y respondió todas mis preguntas. ¡Mi casa está más fresca que nunca!"</p>
+</div>
+<div class="rounded-xl bg-white dark:bg-background-dark/50 p-8 shadow-lg">
+<div class="flex items-center mb-4">
+<img alt="Avatar de un cliente" class="w-12 h-12 rounded-full mr-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUr5aV-bW1obClSM972S6bvRj8GOI3nwV8EpI-pt3QsPzPD1_RB76si3fjyRahMtNwiH9kN_Qjlm6C8Kt8d7nwg4j6pUquYnGkAchYj1g807Ta7q0texb4bLa7W9o1V5Y6T9DH5WL147kDkPIXiXFTnPvGwoVMScJ4Hq45cWK-Koy_mVkmqqs7DL_DKq2wjvawHkl9atS_e72XjNDX-3pCaMcJFS0TsTiDZYz9wmVG2mjGLFV2VMOIVItDQ9AfmV-GnPx9greYGKs"/>
+<div>
+<p class="font-bold text-gray-900 dark:text-white">Juan Pérez</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Dueño de Negocio</p>
+</div>
+</div>
+<p class="text-gray-600 dark:text-gray-300">"Repararon el sistema de aire central de nuestra oficina en tiempo récord. Excelente servicio y precios muy competitivos. Los recomiendo ampliamente."</p>
+</div>
+<div class="rounded-xl bg-white dark:bg-background-dark/50 p-8 shadow-lg">
+<div class="flex items-center mb-4">
+<img alt="Avatar de un cliente" class="w-12 h-12 rounded-full mr-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPRgHrURugM6ymfbe_DIusoioD1lNKTeFrWTHLk60DxlPhvZJtdNGeBuCxpMzUxC0jglmj70oOI4ijAVQaGO50vEDlG8opKFZnPVmBk_xy_xOMkJ266ngdwmRQiM6kYg-94PIlRTKvWjnodPzmKedWoLfx5X9FcerjiapJYAbAy_vSHouJtxB9tCg7pzeQWBEcoWPRejji_yX2kKt_-5qZMNjJmnHCD9IXAMmR9LzXBiuk3JKO-PblXtJcWO5SIg5ipFZM465_Log"/>
+<div>
+<p class="font-bold text-gray-900 dark:text-white">Ana Gómez</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Administradora de Propiedades</p>
+</div>
+</div>
+<p class="text-gray-600 dark:text-gray-300">"Llevo años utilizando sus servicios de mantenimiento para varias propiedades. Son confiables, puntuales y siempre hacen un trabajo impecable."</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 sm:py-24 bg-white dark:bg-black/20">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-3xl mx-auto">
+<h2 class="text-center text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">Preguntas Frecuentes</h2>
+<div class="mt-8 space-y-4">
+    <details class="group rounded-lg bg-background-light dark:bg-background-dark/50 p-6 shadow-sm">
+<summary class="flex cursor-pointer items-center justify-between text-lg font-medium text-gray-900 dark:text-white">
+<span>¿Con qué frecuencia debo revisar mi aire acondicionado?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<p class="mt-4 text-gray-600 dark:text-gray-400">Recomendamos revisar su aire acondicionado al menos una vez al año, preferiblemente antes de que comience el verano, para garantizar que funcione de manera eficiente y evitar averías inesperadas.</p>
+</details>
+<details class="group rounded-lg bg-background-light dark:bg-background-dark/50 p-6 shadow-sm">
+<summary class="flex cursor-pointer items-center justify-between text-lg font-medium text-gray-900 dark:text-white">
+<span>¿Con qué marcas trabajan?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<p class="mt-4 text-gray-600 dark:text-gray-400">Trabajamos con las principales marcas de aire acondicionado del mercado. Nuestros técnicos están certificados para instalar, mantener y reparar una amplia variedad de modelos y sistemas.</p>
+</details>
+<details class="group rounded-lg bg-background-light dark:bg-background-dark/50 p-6 shadow-sm">
+<summary class="flex cursor-pointer items-center justify-between text-lg font-medium text-gray-900 dark:text-white">
+<span>¿Ofrecen garantías en sus servicios?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<p class="mt-4 text-gray-600 dark:text-gray-400">Sí, todos nuestros servicios de instalación y reparación vienen con una garantía de satisfacción. Además, los equipos que instalamos cuentan con la garantía del fabricante. Pregunte a nuestro equipo para más detalles.</p>
+</details>
+</div>
+</div>
+</div>
+</section>
+<section id="contacto-section" class="py-16 sm:py-24 bg-primary/10 dark:bg-primary/20">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-2xl mx-auto">
+<h2 class="text-center text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">Contáctanos</h2>
+<p class="mt-4 text-center text-lg text-gray-600 dark:text-gray-400">¿Tienes preguntas o quieres solicitar un servicio? Completa el formulario y nos pondremos en contacto contigo a la brevedad.</p>
+
+<form class="mt-8 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8" action="https://formspree.io/f/xkgqpojd" method="POST">
+    <div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="first-name">Nombre</label>
+<div class="mt-1">
+<input class="block w-full rounded-md border-gray-300 dark:border-gray-600 bg-white dark:bg-background-dark/50 shadow-sm focus:border-primary focus:ring-primary sm:text-sm" id="first-name" name="name" type="text" required/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="last-name">Apellido</label>
+<div class="mt-1">
+<input class="block w-full rounded-md border-gray-300 dark:border-gray-600 bg-white dark:bg-background-dark/50 shadow-sm focus:border-primary focus:ring-primary sm:text-sm" id="last-name" name="lastname" type="text"/>
+</div>
+</div>
+<div class="sm:col-span-2">
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="email">Correo Electrónico</label>
+<div class="mt-1">
+<input class="block w-full rounded-md border-gray-300 dark:border-gray-600 bg-white dark:bg-background-dark/50 shadow-sm focus:border-primary focus:ring-primary sm:text-sm" id="email" name="_replyto" type="email" required/>
+</div>
+</div>
+<div class="sm:col-span-2">
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="phone-number">Número de Teléfono</label>
+<div class="mt-1">
+<input class="block w-full rounded-md border-gray-300 dark:border-gray-600 bg-white dark:bg-background-dark/50 shadow-sm focus:border-primary focus:ring-primary sm:text-sm" id="phone-number" name="phone" type="tel"/>
+</div>
+</div>
+<div class="sm:col-span-2">
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="message">Mensaje</label>
+<div class="mt-1">
+<textarea class="block w-full rounded-md border-gray-300 dark:border-gray-600 bg-white dark:bg-background-dark/50 shadow-sm focus:border-primary focus:ring-primary sm:text-sm" id="message" name="message" rows="4" required></textarea>
+</div>
+</div>
+<div class="sm:col-span-2">
+<button class="w-full inline-flex items-center justify-center rounded-lg bg-primary px-6 py-3 border border-transparent text-base font-medium text-white shadow-sm hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2" type="submit">Enviar Mensaje</button>
+</div>
+</form>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="bg-background-light dark:bg-background-dark border-t border-gray-200 dark:border-gray-800">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="flex flex-col items-center md:flex-row md:justify-between">
+    <div class="flex flex-wrap justify-center gap-x-6 gap-y-4 md:order-2">
+<a class="text-base text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="equipos_comerciales.html">Equipos Comerciales</a>
+<a class="text-base text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="equipos_industriales.html">Equipos Industriales</a>
+<a class="text-base text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="chillers.html">Chillers</a> 
+<a class="text-base text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="residenciales.html">Residenciales</a>
+<a class="text-base text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="nosotros.html">Nosotros</a>
+</div>
+<p class="mt-8 text-base text-gray-500 dark:text-gray-400 md:mt-0 md:order-1">© 2025 Clibaires. Todos los derechos reservados. <span class="designer-text">Diseño web de Techne Nest</span></p>
+</div>
+</div>
+</footer>
+<style>
+    /* Estilo para el texto del diseñador en el footer */
+    .designer-text {
+        font-size: 0.75rem;
+        color: #9ca3af;
+        margin-top: 4px;
+    }
+</style>
+
+
+<a class="
+    fixed 
+    bottom-[25px] 
+    right-[25px] 
+    w-[55px] 
+    h-[55px] 
+    bg-[#25D366] 
+    rounded-full 
+    shadow-lg 
+    flex 
+    items-center 
+    justify-center 
+    z-[1000] 
+    transition-transform 
+    hover:scale-110 
+    lg:w-[60px] lg:h-[60px] lg:bottom-[30px] lg:right-[30px]
+" href="https://wa.me/5491165415928?text=Hola,%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank">
+    <img class="w-[60%] h-[60%]" src="whatsapp (1).png" alt="Logo de WhatsApp">
+</a>
+
+</div>
+
+</body></html>
+
+
+
